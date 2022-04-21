@@ -1,25 +1,19 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "elytra-addon",
   "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for the Meteor addons.",
+  "name": "ElytraBot Addon",
+  "description": "Google maps for your elytra.",
   "authors": [
-    "seasnail8169"
+    "RickyTheRacc"
   ],
-  "contact": {
-    "repo": "https://github.com/MeteorDevelopment/meteor-addon-template"
-  },
-  "icon": "assets/template/icon.png",
+  "icon": "assets/textures/icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "dummy.addon.template.TemplateAddon"
+      "thej.ElytraAddon"
     ]
   },
-  "mixins": [
-    "template.mixins.json"
-  ],
   "custom": {
     "meteor-client:color": "225,25,25"
   },
