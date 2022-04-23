@@ -17,7 +17,7 @@ public class ElytraAddon extends MeteorAddon {
 		LOG.info("Injecting ElytraBot");
 
 		// Required when using @EventHandler
-		MeteorClient.EVENT_BUS.registerLambdaFactory("meteordevelopment.addons.textures", (lookupInMethod, klass) -> (MethodHandles.Lookup) lookupInMethod.invoke(null, klass, MethodHandles.lookup()));
+		MeteorClient.EVENT_BUS.registerLambdaFactory("thej.elytrabot", (lookupInMethod, klass) -> (MethodHandles.Lookup) lookupInMethod.invoke(null, klass, MethodHandles.lookup()));
 
 		// Modules
 		Modules.get().add(new ElytraBotThreaded());
